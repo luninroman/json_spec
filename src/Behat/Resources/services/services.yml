@@ -5,7 +5,7 @@ services:
 
   json_matcher.factory:
     class: Fesor\JsonMatcher\JsonMatcherFactory
-    arguments: ["@json_matcher.json_helper", %json_spec.excluded_keys%]
+    arguments: ["@json_matcher.json_helper", "%json_spec.excluded_keys%"]
 
   json_spec.helper.memory_helper:
     class: JsonSpec\Behat\Helper\MemoryHelper

@@ -12,7 +12,7 @@ services:
 
   json_spec.helper.json_loader:
     class: JsonSpec\JsonLoader
-    arguments: [%json_spec.json_directory%]
+    arguments: ["%json_spec.json_directory%"]
 
   json_spec.json_holder:
     class: JsonSpec\Behat\JsonProvider\JsonHolder
